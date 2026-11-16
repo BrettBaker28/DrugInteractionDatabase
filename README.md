@@ -9,10 +9,15 @@ non-technical language, the system makes complex medical data more accessible to
 in this database is for educational purposes only and should not be taken as medical advice. 
 
 ## How-to
-(list steps needed to run the project)
+The project will be built using Django and Rest with data being handled with the pandas library. 
 
 ## Tests
-(list some example tests users can use to see if the program is working properly)
+- Check if downloading the DDInter data works
+- Check if passing strings to the database look up returns the right data
+- Check if the data passed to the display code works
+- Check if a user can acess the website
+- Check the autocorrect bar takes input correctly
+- Checks if the autocorrect bar interacts with the database correctly
 
 ## Branch Strategy
 We will be using GitHub Flow for branch managing. Keeps branches to short, single goal ideas. Make sure to merge a branch and retire it after it's intended goal is reached.
