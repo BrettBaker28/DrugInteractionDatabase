@@ -14,3 +14,5 @@ in this database is for educational purposes only and should not be taken as med
 ## Tests
 (list some example tests users can use to see if the program is working properly)
 
+## Branch Strategy
+We will be using GitHub Flow for branch managing. Keeps branches to short, single goal ideas. Make sure to merge a branch and retire it after it's intended goal is reached.
