@@ -10,6 +10,15 @@ in this database is for educational purposes only and should not be taken as med
 ## How-to
 The project will be built using Django and Rest with data being handled with the pandas library. 
 
+Install Django (run in terminal)
+ - pip install django
+   
+To Start Server (run in terminal)
+ - cd DrugInteractionWebsite
+ - python manage.py runserver
+
+ - Then open http://127.0.0.1:8000/ in browser
+
 ## Tests
 - Check if downloading the DDInter data works
 - Check if passing strings to the database look up returns the right data
