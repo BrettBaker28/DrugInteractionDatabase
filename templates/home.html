@@ -1,10 +1,14 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
 
-<html>
-    <h1>Welcome to the Drug Interactions Database Website!</h1>
-    <p>This site is still under development!</p>
-    <p>Admin UserName: admin</p>
-    <p>Admin Password: admin</p>
-    <p>Dont tell anyone else the super secret admin login or else</p>
-    <a href="/admin/" class="btn">Go to Admin Site</a>
-</html>
+<h1>Welcome to the Drug Interactions Home Page!</h1>
+
+
+<div class="text-container">
+    <p1>This website is used to both find interactions between two drugs and report their interaction levels,</p1>
+    <p1>As well as searching individual drugs to find their information.</p1>
+</div>
+
+
+{% endblock %}
