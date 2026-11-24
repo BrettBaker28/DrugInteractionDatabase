@@ -1,0 +1,6 @@
+# Lint the Django project only; the notebook is a scratch sandbox.
+extend-exclude = ["jupyter notebook", "interactions/migrations"]
+
+[lint]
+# Real errors only: syntax errors, undefined names, unused imports.
+select = ["E4", "E7", "E9", "F"]

@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+/* General */
+body {
+    background: #ffffff;
+    color: #333333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header formating */
+header {
+    background: #b22222;
+    padding: 18px 40px;
+    color: white;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #ffcccc;
+}
+
+/* Main Content */
+.text-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px 40px;
+    background: #ffffff;
+    border-radius: 10px;
+    line-height: 1.7;
+    text-align: center;
+}
+
+.text-container p {
+    color: #555555;
+    margin-bottom: 18px;
+    font-size: 17px;
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #b22222;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 40px;
+    font-weight: 400;
+    color: #333333;
+}
+
+/* Tables for Drug Information */
+table{
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #dddddd;
+    text-align: left;
+    white-space: nowrap;
+}
+
+th {
+    background: #f2f2f2;
+    font-weight: bold;
+    color: #333333;
+}
+
+th a{
+    color: #b22222;
+    text-decoration: none;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+/* Forms */
+form {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    padding: 25px 30px;
+    border-radius: 6px;
+    width: 350px;
+    margin: 30px auto;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 4px;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 8px;
+    background: #f2f2f2;
+    border-radius: 4px;
+    color: #b22222;
+}
+
+/* Buttons */
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b22222;
+    border-radius: 4px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: 0.02s ease;
+    background: #b22222;
+}
+
+button:hover {
+    background: #8f1b1b;
+}
+
+/* Links */
+.link {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.link a {
+    color: #b22222;
+    text-decoration: none;
+    padding: 8px 14px;
+    border: 1px solid #b22222;
+    border-radius: 4px;
+    transition: 0.2s ease;
+}
+
+/* Site Layout */
+.site-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* Images */
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+/* Navbar */
+.top-navbar {
+    background-color: #b22222;
+    width: 100%;
+    padding: 18px 0;
+}
+
+.top-navbar .site-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-title {
+    color: white;
+    font-size: 21px;
+    font-weight: bold;
+}
+.navbar-links {
+    display: flex;
+    gap: 30px;
+}
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.2s ease;
+}
+
+.navbar-links a:hover {
+    color: #ffcccc;
+}

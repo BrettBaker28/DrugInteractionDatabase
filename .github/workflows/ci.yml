@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements-dev.txt
+
+      - name: Build check
+        run: python manage.py check
+
+      - name: Lint
+        run: ruff check .
+
+      - name: Unit tests with coverage
+        run: coverage run manage.py test
+
+      - name: Coverage report (fails under the threshold in .coveragerc)
+        run: coverage report
