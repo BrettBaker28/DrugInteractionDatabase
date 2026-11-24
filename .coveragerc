@@ -1,0 +1,9 @@
+[run]
+source = interactions
+omit =
+    interactions/migrations/*
+    interactions/tests.py
+
+[report]
+show_missing = True
+fail_under = 80
