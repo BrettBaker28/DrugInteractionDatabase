@@ -21,7 +21,12 @@
     <button type="submit">Find Interactions</button>
 </form>
 
-{% if interaction %}
+{% if error %}
+    <section>
+        <h2>Check Your Entry</h2>
+        <p>{{ error }}</p>
+    </section>
+{% elif interaction %}
     <section>
         <h2>Interaction Found</h2>
 
@@ -32,7 +37,7 @@
 {% elif searched %}
     <section>
         <h2>No Interactions Found</h2>
-        <p>No interaction data was found in the database</p>
+        <p>No known interaction found in our data.</p>
     </section>
 {% endif %}
 {% endblock %}
