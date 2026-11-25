@@ -4,4 +4,34 @@
 
 <h1>Check Interactions</h1>
 
+<p>Enter two drugs to check for interactions: </p>
+
+<form method="Post">
+    {% csrf_token %}
+
+    <div>
+        <label for="drug1">First Drug</label>
+        <input type="text" id="drug1" name="drug1" placeholder="Enter Drug Name" value="{{ drug1 }}" required>
+    </div>
+    <div>
+        <label for="drug2">Second Drug</label>
+        <input type="text" id="drug2" name="drug2" placeholder="Enter Drug Name" value="{{ drug2 }}" required>
+    </div>
+
+    <button type="submit">Find Interactions</button>
+</form>
+
+{% if interaction %}
+    <section>
+        <h2>Interaction Found</h2>
+
+        <p>First Drug: {{ interaction.drug_a }}</p>
+        <p>Second Drug: {{ interaction.drug_b }}</p>
+    </section>
+{% elif searched %}
+    <section>
+        <h2>No Interactions Found</h2>
+        <p>No interaction data was found in the database</p>
+    </section>
+{% endif %}
 {% endblock %}

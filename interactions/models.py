@@ -9,3 +9,13 @@ class Drug(models.Model):
 
     def __str__(self):
         return self.name
+
+class DrugInteraction(models.Model):
+    ddinter_id_a = models.CharField(max_length=50)
+    drug_a = models.CharField(max_length=255)
+    ddinter_id_b = models.CharField(max_length=50)
+    drug_b = models.CharField(max_length=255)
+    level = models.CharField(max_length=50)
+
+    def __str__(self):
+        return f"{self.drug_a} + {self.drug_b}"

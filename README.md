@@ -2,19 +2,27 @@
 Repository for group project in CPS 420, Fall 2026.
 
 ## Purpose
-The Drug Interactions Database is a web-based application designed to help users quickly identify potential 
-interactions between two medications. By presenting drug interaction information and severity levels in clear, 
+The Drug Interactions Database is a web-based application designed to help users quickly identify potential
+interactions between two medications. By presenting drug interaction information and severity levels in clear,
 non-technical language, the system makes complex medical data more accessible to patients. The information provided
-in this database is for educational purposes only and should not be taken as medical advice. 
+in this database is for educational purposes only and should not be taken as medical advice.
 
 ## How-to
-The project will be built using Django and Rest with data being handled with the pandas library. 
+The project will be built using Django and Rest with data being handled with the pandas library.
 
 Install Django (run in terminal)
  - pip install django
-   
+
+Create Database Migrations (run in terminal)
+- python manage.py migrate
+
+Import Drug Interaction Data
+- python manage.py shell
+- exec(open("interactions/import_data.py").read())
+- exit()
+
+
 To Start Server (run in terminal)
- - cd DrugInteractionWebsite
  - python manage.py runserver
 
  - Then open http://127.0.0.1:8000/ in browser
