@@ -39,7 +39,7 @@ def validate_pair(drug1, drug2, known_names=None):
             return drug_not_found(name)
 
     # BR-02: two different drugs
-    #if drug1.lower() == drug2.lower():
-    #    return SAME_DRUG
+    if drug1.lower() == drug2.lower():
+        return SAME_DRUG
 
     return None
