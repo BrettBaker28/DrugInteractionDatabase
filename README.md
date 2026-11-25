@@ -35,3 +35,5 @@ In the case of a merge conflict, the team will communicate to discuss which code
 
 ## Branch Protection
 The main branch is protected to prevent unwanted changes. Some examples on how the main branch is protected is by force pushes being disabled and changes must be submitted through pull requests that require at least one teammate's approval before being merged. This allows the team to review changes and catch potential issues before they're introduced into the main branch.
+
+## Ignore
